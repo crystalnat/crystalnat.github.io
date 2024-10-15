@@ -99,6 +99,28 @@ document.getElementById('nextToThird').addEventListener('click', function() {
   });
 });
 
+document.getElementById("yes").addEventListener("click", function() {
+  const pesan = document.getElementById("pesan");
+  pesan.style.display = "flex";
+  document.querySelector('.pesan').scrollIntoView({
+    behavior: 'smooth'
+  })
+  const bubbles = document.querySelectorAll('.chat-wa > div');
+  let index = 0;
 
+  function showBubble() {
+    if (index < bubbles.length) {
+      bubbles[index].classList.add('show');
+      index++;
+      setTimeout(showBubble, 2000); // delay between showing bubbles
+    }
+  }
+
+  setTimeout(function() {
+    showBubble();
+  }, 500);
+  
+
+});
 
 

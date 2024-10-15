@@ -245,14 +245,194 @@ button#yes {
 .pesan {
   width: 100vw;
   height: 100vh;
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 
-  background: url('./img/4K\ Wallpaper\ Nature\ Beach\ Ideas.jpeg');
+  background: url('./img/sakura-1920x1080-4k-hd-wallpaper-cherry-blossom-pink-spring-flowers-10302.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0;
-  gap: 4rem;
+}
+
+.phone {
+  width: 25rem;
+  height: 50rem;
+  background: #fff;
+  border-radius: 4rem;
+  border: 10px solid #0a0808;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.phone::after {
+  content: '';
+  width: 25rem;
+  height: 50rem;
+  background: transparent;
+  border-radius: 4rem;
+  border: 10px solid #0a0808;
+  position: absolute;
+  z-index: 5;
+}
+
+.phone-camera {
+  width: 12rem;
+  height: 2rem;
+  background: #000;
+  border-radius: 0 0 1rem 1rem;
+  position: absolute;
+  top: 409vh;
+  z-index: 10;
+}
+
+.ui-wa {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  align-items: center;
+  background: #121b22;
+  border-radius: 3.2rem;
+}
+
+.top {
+  width: 100%;
+  height: 6rem;
+  border-radius: 2rem 2rem 0 0;
+  background: #1f2c34;
+  display: flex;
+  justify-content: start;
+  align-items: end;
+  flex-direction: row;
+  color: #fff;
+}
+
+.top-content {
+  gap: .1rem;
+  padding: .5rem 0;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+  color: #fff;
+
+  & i {
+    font-size: 2.2rem;
+    font-weight: 100;
+  }
+
+  & h3 {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-left: .5rem;
+  }
+
+}
+
+.circle-wa {
+  width: 3rem;
+  height: 3rem;
+  background: #fff;
+  border-radius: 50%;
+}
+
+.chat-wa {
+  width: 100%;
+  height: 40rem;
+  gap: 0;
+}
+
+.right-bubble {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex-direction: row;
+  color: #fff;
+  padding: 1rem;
+  gap: 1rem;
+  text-align: start;
+  opacity: 0;
+  & p {
+    max-width: 80%;
+    font-weight: 200;
+    background: #1e5f49;
+    padding: .5rem;
+    border-radius: 1rem 1rem 0 1rem;
+  } 
+}
+
+.left-bubble {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+  color: #fff;
+  padding: 1rem;
+  gap: 1rem;
+  text-align: start;
+  opacity: 0;
+
+  & p {
+    max-width: 80%;
+    font-weight: 200;
+    background: #414141;
+    padding: .5rem;
+    border-radius: 1rem 1rem 1rem 0;
+  } 
+}
+
+.left-bubble.show, .right-bubble.show {
+  opacity: 1;
+}
+
+.bottom {
+  position: absolute;
+  top: 483vh;
+  width: 25rem;
+  height: 3.5rem;
+  border-radius: 0 0 2rem 2rem;
+  background: transparent;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+  color: #fff;
+}
+
+.input-wa {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+
+  & input {
+    margin-left: 1rem;
+    width: 100%;
+    height: 80%;
+    background: #1f2c34;
+    border-radius: .7rem;
+    border: none;
+    outline: none;
+    color: #fff;
+  }
+}
+
+.send-wa {
+  width: 15%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+
+  & i {
+    font-size: 1.5rem;
+  }
 }
