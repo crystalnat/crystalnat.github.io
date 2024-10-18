@@ -260,7 +260,7 @@ button#yes {
 
 .phone {
   width: 25rem;
-  height: 50rem;
+  height: 81%;
   background: #fff;
   border-radius: 4rem;
   border: 10px solid #0a0808;
@@ -269,7 +269,7 @@ button#yes {
   align-items: center;
 }
 
-.phone::after {
+/* .phone::after {
   content: '';
   width: 25rem;
   height: 50rem;
@@ -278,7 +278,7 @@ button#yes {
   border: 10px solid #0a0808;
   position: absolute;
   z-index: 5;
-}
+} */
 
 .phone-camera {
   width: 12rem;
@@ -298,13 +298,13 @@ button#yes {
   flex-direction: column;
   align-items: center;
   background: #121b22;
-  border-radius: 3.2rem;
+  border-radius: 3.2em;
 }
 
 .top {
   width: 100%;
   height: 6rem;
-  border-radius: 2rem 2rem 0 0;
+  border-radius: 3.5em 3.5em 0 0;
   background: #1f2c34;
   display: flex;
   justify-content: start;
@@ -314,8 +314,8 @@ button#yes {
 }
 
 .top-content {
-  gap: .1rem;
-  padding: .5rem 0;
+  gap: .1em;
+  padding: .5em 0;
   width: 100%;
   display: flex;
   justify-content: start;
@@ -337,15 +337,15 @@ button#yes {
 }
 
 .circle-wa {
-  width: 3rem;
-  height: 3rem;
+  width: 3em;
+  height: 3em;
   background: #fff;
   border-radius: 50%;
 }
 
 .chat-wa {
   width: 100%;
-  height: 40rem;
+  height: 40em;
   gap: 0;
 }
 
@@ -364,7 +364,7 @@ button#yes {
     font-weight: 200;
     background: #1e5f49;
     padding: .5rem;
-    border-radius: 1rem 1rem 0 1rem;
+    border-radius: 1em 1em 0 1em;
   } 
 }
 
@@ -374,8 +374,8 @@ button#yes {
   align-items: center;
   flex-direction: row;
   color: #fff;
-  padding: 1rem;
-  gap: 1rem;
+  padding: 1em;
+  gap: 1em;
   text-align: start;
   opacity: 0;
 
@@ -383,8 +383,8 @@ button#yes {
     max-width: 80%;
     font-weight: 200;
     background: #414141;
-    padding: .5rem;
-    border-radius: 1rem 1rem 1rem 0;
+    padding: .5em;
+    border-radius: 1em 1em 1em 0;
   } 
 }
 
@@ -395,9 +395,9 @@ button#yes {
 .bottom {
   position: absolute;
   top: 483vh;
-  width: 25rem;
-  height: 3.5rem;
-  border-radius: 0 0 2rem 2rem;
+  width: 25em;
+  height: 3.5em;
+  border-radius: 0 0 2em 2em;
   background: transparent;
   display: flex;
   justify-content: start;
@@ -415,11 +415,11 @@ button#yes {
   flex-direction: row;
 
   & input {
-    margin-left: 1rem;
+    margin-left: 1em;
     width: 100%;
     height: 80%;
     background: #1f2c34;
-    border-radius: .7rem;
+    border-radius: .7em;
     border: none;
     outline: none;
     color: #fff;
@@ -435,6 +435,6 @@ button#yes {
   flex-direction: row;
 
   & i {
-    font-size: 1.5rem;
+    font-size: 1.5em;
   }
 }
