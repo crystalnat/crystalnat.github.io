@@ -112,13 +112,13 @@ document.getElementById("yes").addEventListener("click", function() {
     if (index < bubbles.length) {
       bubbles[index].classList.add('show');
       index++;
-      setTimeout(showBubble, 2000); // delay between showing bubbles
+      setTimeout(showBubble, 3000); // delay between showing bubbles
     }
   }
 
   setTimeout(function() {
     showBubble();
-  }, 500);
+  }, 1500);
   
 
 });

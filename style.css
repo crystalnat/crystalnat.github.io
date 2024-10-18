@@ -119,18 +119,20 @@ h1, h2, h3, h4, h5, h6,p {
   border-radius: 2rem;
 
   & img {
-    width: 12.5%;
+    width: 6.25%;
     height: 100%;
     object-fit: cover;
     filter: grayscale(100%);
-    transition: .5s;
+    transition: 1s;
+    opacity: .8;
   }
 }
 
 .image-slide img:hover {
   width: 100%;
   filter: grayscale(0%);
-  transition: 1s;
+  opacity: 1;
+
 }
 
 .third {
